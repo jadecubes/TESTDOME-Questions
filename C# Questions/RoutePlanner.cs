@@ -60,7 +60,7 @@ public class RoutePlanner
         if (((reachable[toRowIdx, toColIdx]>>1) & 1) ==1)//visited
             return;
         
-        if (reachable[preRowIdx, preColIdx]==3)//visited and rechable
+        if (reachable[preRowIdx, preColIdx]==3)//visited and reachable
           reachable[curRowIdx, curColIdx] =3;
 
         for (int i = 0; i < DIR.GetLength(0); i++)
