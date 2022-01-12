@@ -1,6 +1,4 @@
-﻿using System;
 /*
- * 
 As a part of the route planner, the RouteExists method is used as a quick filter if the destination is reachable, before using more computationally intensive procedures for finding the optimal route.
 
 The roads on the map are rasterized and produce a matrix of boolean values - true if the road is present or false if it is not. The roads in the matrix are connected only if the road is immediately left, right, below or above it.
@@ -18,8 +16,10 @@ bool[,] mapMatrix = {
 };
 
 RouteExists(0, 0, 2, 2, mapMatrix);
- * 
  */
+
+using System;
+
 public class RoutePlanner
 {
     public static int[,] DIR = new int[4, 2] { { 1, 0 },{ -1, 0 }, { 0, 1 }, { 0, -1 } };
