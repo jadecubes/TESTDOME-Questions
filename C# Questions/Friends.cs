@@ -82,7 +82,7 @@ public class Friends
                     if (visited.Contains(nxt))
                         continue;
                     visited.Add(nxt);
-                    //avoid repeating adding
+                    //avoid adding repetitive values
                     result.Add(nxt);
                 }
             }
