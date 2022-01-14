@@ -50,7 +50,7 @@ public class Friends
 
         queue.Enqueue(member);
         
-        while (queue.Count > 0 && degree>1)
+        while (degree>1)
         {
             int cnt = queue.Count;
             for (int i = 0; i < cnt; i++)
